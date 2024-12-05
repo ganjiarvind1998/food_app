@@ -1,0 +1,106 @@
+/* Add fade-in animation to images */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  /* Add enhanced animation to captions */
+  @keyframes slideIn {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(-10%);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes textAnimate {
+    0% {
+      transform: scale(0.8) rotate(-5deg);
+      color: #ff0000;
+    }
+    50% {
+      transform: scale(1.1) rotate(5deg);
+      color: #00ff00;
+    }
+    100% {
+      transform: scale(1) rotate(0);
+      color: #ffffff;
+    }
+  }
+  
+  .slide-in {
+    animation: slideIn 1.5s ease-in-out;
+  }
+  
+  .text-animate {
+    animation: textAnimate 2s ease-in-out;
+  }
+  
+  .header-contents {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .caption-content {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+    padding: 20px;
+    border-radius: 10px;
+    animation: textAnimate 2s ease-in-out;
+  }
+  
+  .caption-content h3, .caption-content p {
+    animation: textAnimate 2s ease-in-out;
+  }
+  
+  /* Large screens */
+  @media (max-width: 1050px) {
+    .caption-content {
+      max-width: 45%;
+    }
+  }
+  
+  /* Tablets */
+  @media (max-width: 768px) {
+    .caption-content {
+      max-width: 65%;
+    }
+    .caption-content p {
+      display: none;
+    }
+    .caption-content h3 {
+      font-size: 1.5em;
+    }
+    .caption-content button {
+      padding: 2vw 4vw;
+    }
+  }
+  
+  /* Mobile screens */
+  @media (max-width: 767px) {
+    .carousel-item img {
+      width: 100%;
+      height: auto;
+    }
+    .caption-content {
+      max-width: 80%;
+    }
+  }
+  

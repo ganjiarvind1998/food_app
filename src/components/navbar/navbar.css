@@ -1,0 +1,143 @@
+/* Navbar Styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box; 
+  background-color: #990c0c !important;
+  z-index: 1000;
+  padding: 0 10px;
+}
+
+.navbar .logo {
+  width: 120px;
+}
+
+.navbar-nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-nav .nav-link {
+  margin: 0 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.navbar-search {
+  position: relative;
+  flex-grow: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 200px;
+}
+
+.search-results {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgb(231, 223, 223);
+  border: 1px solid #ddd;
+  width: 100%;
+  max-width: 200px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+  display: none;
+}
+
+.search-results.show {
+  display: block;
+}
+
+.search-result-item {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.search-result-item img {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+}
+
+.no-results {
+  padding: 10px;
+  text-align: center;
+  color: #ee1212;
+}
+
+.navbar-cart {
+  position: relative;
+}
+
+.cart-item-count {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+
+.sign-in-button {
+  margin-left: 10px;
+}
+
+/* Responsive Styles for 480px screen width */
+@media (max-width: 480px) {
+  /* Navbar adjustments */
+  .navbar {
+      padding: 0 10px;
+  }
+  
+  .navbar .logo {
+      width: 100px;
+  }
+
+  .navbar-nav {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .navbar-nav .nav-link {
+      margin: 8px 0;
+      font-size: 0.85rem;
+  }
+
+  .navbar-search {
+      flex-grow: 1;
+      justify-content: flex-start;
+  }
+
+  .search-input {
+      max-width: 180px;
+  }
+
+  .search-results {
+      max-width: 180px;
+  }
+
+  .cart-item-count {
+      top: -8px;
+      right: -8px;
+      width: 16px;
+      height: 16px;
+      font-size: 10px;
+  }
+}
