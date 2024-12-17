@@ -5,13 +5,16 @@
   left: 0;
   width: 100%;
   box-sizing: border-box; 
-  background-color: #990c0c !important;
   z-index: 1000;
   padding: 0 10px;
+  background-color: rgb(199, 207, 207) !important;
 }
 
 .navbar .logo {
   width: 120px;
+  margin-left: 15px;
+  border-radius: 10px;
+
 }
 
 .navbar-nav {
@@ -31,6 +34,7 @@
   flex-grow: 2;
   display: flex;
   justify-content: center;
+
 }
 
 .search-input {

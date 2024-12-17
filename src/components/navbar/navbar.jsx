@@ -42,9 +42,9 @@ const NavBar = ({ setShowLogin }) => {
   );
 
   return (
-    <Navbar bg="light" expand="lg" className="navbar">
+    <Navbar bg="darl" expand="lg" className="navbar">
       <Navbar.Brand as={Link} to="/">
-        <img src={assets.logo} alt="logo" className="logo" />
+        <img src="https://logos.flamingtext.com/Word-Logos/food-design-sketch-name.png" alt="logo" className="logo" />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="navbar-nav" />
       <Navbar.Collapse id="navbar-nav">

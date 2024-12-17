@@ -2,12 +2,14 @@
     margin-top: 30px;
     padding-left: 15px; 
     padding-right: 15px; 
-    background-color: rgb(195, 197, 175);
+    background-color: rgb(28, 29, 24);
 }
 
 .food-display h2 {
     font-size: max(2vw, 24px);
-    font-weight: 600;
+    font-weight: 800;
+    text-align: center;
+    color: white;
 }
 
 .food-display-list {
