@@ -38,11 +38,10 @@ const NavBar = ({ setShowLogin }) => {
   return (
     <nav className="modern-navbar">
       <div className="nav-left">
-      <Link to="/" className="logo">
-  <img src={whatLogo} alt="Logo" className="logo-img" />
-  <span className="brand-name">FoodlyGo</span>
-</Link>
-
+        <Link to="/" className="logo">
+          <img src={whatLogo} alt="Logo" className="logo-img" />
+          <span className="brand-name">FoodlyGo</span>
+        </Link>
       </div>
 
       <div className="nav-toggle" onClick={() => setMobileMenu(!mobileMenu)}>
@@ -52,13 +51,31 @@ const NavBar = ({ setShowLogin }) => {
       </div>
 
       <ul className={`nav-links ${mobileMenu ? "active" : ""}`}>
-        <li className={menu === "home" ? "active" : ""} onClick={() => setMenu("home")}>
+        <li
+          className={menu === "home" ? "active" : ""}
+          onClick={() => {
+            setMenu("home");
+            setMobileMenu(false); // close menu after click
+          }}
+        >
           <Link to="/">Home</Link>
         </li>
-        <li className={menu === "menu" ? "active" : ""} onClick={() => setMenu("menu")}>
+        <li
+          className={menu === "menu" ? "active" : ""}
+          onClick={() => {
+            setMenu("menu");
+            setMobileMenu(false);
+          }}
+        >
           <Link to="/menu">Menu</Link>
         </li>
-        <li className={menu === "contact" ? "active" : ""} onClick={() => setMenu("contact")}>
+        <li
+          className={menu === "contact" ? "active" : ""}
+          onClick={() => {
+            setMenu("contact");
+            setMobileMenu(false);
+          }}
+        >
           <Link to="/contact">Contact</Link>
         </li>
       </ul>
