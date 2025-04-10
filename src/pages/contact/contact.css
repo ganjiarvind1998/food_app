@@ -3,7 +3,7 @@
 .contact-container {
   font-family: Arial, sans-serif;
   padding: 20px;
-  background-color: #999393;
+  background-color: #faf6f6;
   border-radius: 8px;
   max-width: 900px;
   margin: 30px auto;
@@ -27,7 +27,7 @@
 .contact-container h3 {
   display: flex;
   align-items: center;
-  color: #007BFF;
+  color: #06942a;
   font-size: 1.2em;
   margin-bottom: 10px;
 }
@@ -56,7 +56,7 @@
 }
 
 .contact-container a {
-  color: #007BFF;
+  color: #0aa023;
   text-decoration: none;
 }
 

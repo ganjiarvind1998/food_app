@@ -1,46 +1,97 @@
 .food-item {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .food-item-link {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  .food-item-image {
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .food-item-description {
-    display: -webkit-box;
-    /* -webkit-line-clamp: 5; */
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-height: 7.5em; /* Approximate height for 5 lines */
-  }
-  
-  .food-item-price {
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .food-item-counter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-  }
-  
-  .food-item-counter .btn {
-    flex: 0 0 auto;
-  }
-  
-  .food-item-counter span {
-    margin: 0 0.5rem;
-    font-size: 1rem;}
-  
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.food-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.food-item-link {
+  text-decoration: none;
+  color: #333;
+}
+
+.food-item-image {
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+.food-body {
+  padding: 16px;
+  background-color: #fff;
+}
+
+.food-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.food-item-description {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  max-height: 6em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.food-item-price {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #28a745;
+  margin-top: 10px;
+}
+
+.food-item-counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 140px;
+  margin-top: 10px;
+}
+
+.food-item-counter button {
+  width: 36px;
+  height: 36px;
+  font-size: 1.1rem;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.food-item-counter button:hover {
+  background-color: #218838;
+}
+
+.food-item-counter span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.add-button {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 8px 18px;
+  margin-top: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #218838;
+}
