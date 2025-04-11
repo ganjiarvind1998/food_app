@@ -40,7 +40,7 @@ const NavBar = ({ setShowLogin }) => {
       <div className="nav-left">
         <Link to="/" className="logo">
           <img src={whatLogo} alt="Logo" className="logo-img" />
-          <span className="brand-name">FoodlyGo</span>
+          <span className="brand-name">Yumbox</span>
         </Link>
       </div>
 

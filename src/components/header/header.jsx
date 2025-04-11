@@ -32,13 +32,13 @@ const Header = () => {
           <div className="carousel-image-container">
             <img src={slide.image} alt={`Slide ${index + 1}`} className="d-block w-100 slide-img" />
             <div className="gradient-overlay" />
-            <img src={logo} className="brand-logo" alt="Brand" />
+            {/* <img src={logo} className="brand-logo" alt="Brand" /> */}
 
             <Carousel.Caption className="header-contents">
               <div className="caption-content fancy-text">
                 <h3>{slide.title}</h3>
                 <p>{slide.subtitle}</p>
-                <button className="order-btn">Order Now</button>
+                {/* <button className="order-btn">Order Now</button> */}
               </div>
             </Carousel.Caption>
           </div>
